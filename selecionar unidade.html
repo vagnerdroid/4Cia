@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de itens</title>
+</head>
+<body>
+
+    <h1>Lista de itens</h1>
+
+    <form action="index.php" method="post">
+        <input type="text" name="item1" placeholder="VTR" href="https://docs.google.com/spreadsheets/d/14EG7h1ODYXwjG6y3S58yUyUJ_pSZKbO_9bKAUExNIsM/edit#gid=0=C7">
+        <input type="text" name="item1" placeholder="VTR" href="https://docs.google.com/spreadsheets/d/14EG7h1ODYXwjG6y3S58yUyUJ_pSZKbO_9bKAUExNIsM/edit#gid=0=A1">
+	<input type="text" name="item2" placeholder="CPP">
+        <input type="text" name="item3" placeholder="ESTADUAIS">
+        <input type="text" name="cpp" placeholder="CPP">
+        <input type="text" name="vtr" placeholder="VTR">
+        <input type="text" name="multas" placeholder="Multas">
+        <input type="text" name="estadual" placeholder="Estaduais">
+        <input type="text" name="municipal" placeholder="Municipais">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        document.querySelector("input[value='Enviar']").onclick = function() {
+            window.open("print.php", "_blank");
+        };
+    </script>
+
+</body>
+</html>
